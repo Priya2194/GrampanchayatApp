@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">ग्रामपंचायत अॅप</string>
+
+
+    <string name="wel_come">स्वागत</string>
+    <string name="email">ईमेल</string>
+    <string name="password">पासवर्ड</string>
+    <string name="login">लॉगिन</string>
+    <string name="registration">नोंदणी</string>
+    <string name="do_not_have_an_account_regisetr">खाते नाही?नोंदणी करा</string>
+    <string name="change_language">भाषा बदला</string>
+    <string name="name">नाव</string>
+    <string name="address">पत्ता</string>
+    <string name="mobile_number">मोबाईल नंबर</string>
+    <string name="confirm_password">पासवर्डची पुष्टी करा</string>
+    <string name="already_have_an_account">आधीपासूनच एक खाते आहे? लॉगिन करा</string>
+    <string name="register">नोंदणी करा</string>
+    <string name="pune_vibhag">पुणे विभाग</string>
+    <string name="_7_12">७/१२</string>
+    <string name="malmatta_patark">मालमत्ता</string>
+    <string name="_8a">8अ</string>
+    <string name="jilha">जिल्हा</string>
+    <string name="taluka">तालुका</string>
+    <string name="village">गाव</string>
+    <string name="forgot_password">पासवर्ड विसरलात</string>
+    <string name="phone">फोन</string>
+
+
+    <string-array name="jilha">
+        <item>अमरावती </item>
+        <item>पुणे </item>
+        <item>सांगली </item>
+        <item>सातारा </item>
+        <item>रायगड  </item>
+    </string-array>
+
+    <string-array name="TalukaAmravati">
+        <item>अमरावती </item>
+        <item>भातकुली </item>
+        <item>नांदगाव खंडेश्वर</item>
+        <item>धारणी </item>
+        <item>चिखलदरा</item>
+    </string-array>
+    <string-array name="Villageamravati">
+        <item>अंतोरा </item>
+        <item>औरंगपूर</item>
+        <item>ब्राम्हणवाडा भगत </item>
+        <item>चिंचखेड</item>
+        <item>शिराळा </item>
+        </string-array>
+
+    <string-array name="TalukaPune">
+        <item>हवेली</item>
+        <item>पुणेशहर</item>
+        <item>मावळ</item>
+        <item>मुळशी</item>
+        <item>शिरूर</item>
+        <item>जुन्नर</item>
+        <item>भोर</item>
+        <item>आंबेगाव</item>
+    </string-array>
+    <string-array name="VillageHaveli">
+        <item>आंबी </item>
+        <item>कोपरे </item>
+        <item>थेऊर</item>
+        <item>देहु </item>
+        <item>लोणी काळभोर</item>
+        <item>हडपसर </item>
+        <item>शिवापूर</item>
+        <item>मांजरी </item>
+    </string-array>
+
+    <string-array name="TalukaSangli">
+        <item>मिरज </item>
+        <item>कवठे-महांकाळ </item>
+        <item>तासगाव</item>
+        <item>जत </item>
+        <item>वाळवा (इस्लामपूर)</item>
+        <item>शिराळा</item>
+        <item>खानापूर-विटा </item>
+        <item>आटपाडी</item>
+        <item>पलूस</item>
+        <item>कडेगाव</item>
+    </string-array>
+    <string-array name="VillageMiraj">
+        <item>अंकली </item>
+        <item>आरग</item>
+        <item>बामणी</item>
+        <item>बामणोली</item>
+        <item>बेडग </item>
+        <item>भोसे</item>
+        <item>कवठे पिराण</item>
+        <item>नांद्रे </item>
+    </string-array>
+
+
+
+</resources>
