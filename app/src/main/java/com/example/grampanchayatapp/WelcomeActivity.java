@@ -25,7 +25,7 @@ public class WelcomeActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 finally {
-                    startActivity( new Intent(WelcomeActivity.this,LoginActivity.class));
+                    startActivity( new Intent(WelcomeActivity.this,Onboarding.class));
                 }
             }
         };thread.start();

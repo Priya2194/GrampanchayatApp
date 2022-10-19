@@ -80,7 +80,7 @@ public class LoginActivity extends AppCompatActivity
                 {
                     if (task.isSuccessful())
                     {
-                        startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                        startActivity(new Intent(LoginActivity.this,NavigationDrawer.class));
                         overridePendingTransition(R.anim.fade_in,R.anim.fade_out);
                         loginL.setVisibility(View.VISIBLE);
                         lProgressBar.setVisibility(View.GONE);
@@ -110,7 +110,7 @@ public class LoginActivity extends AppCompatActivity
     protected void onStart() {
         super.onStart();
         if (FirebaseAuth.getInstance().getUid() != null) {
-            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            Intent intent = new Intent(LoginActivity.this,NavigationDrawer.class);
             startActivity(intent);
         }
     }
