@@ -1,9 +1,11 @@
 package com.example.grampanchayatapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.widget.ImageView;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -22,12 +24,16 @@ import com.example.grampanchayatapp.databinding.ActivityNavigationDrawerBinding;
 
 public class NavigationDrawer extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-
+ImageView gharpatti,panipatti,registerp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
+
+        gharpatti=findViewById(R.id.gharp);
+        panipatti=findViewById(R.id.panip);
+        registerp=findViewById(R.id.registerN);
 
         Toolbar toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -40,6 +46,24 @@ public class NavigationDrawer extends AppCompatActivity implements NavigationVie
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
 
+        registerp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(NavigationDrawer.this,UserActivity.class));
+            }
+        });
+        gharpatti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(NavigationDrawer.this,GharpActivity.class));
+            }
+        });
+        panipatti.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(NavigationDrawer.this,PanipattiActivity.class));
+            }
+        });
     }
 
     @Override
@@ -62,6 +86,26 @@ public class NavigationDrawer extends AppCompatActivity implements NavigationVie
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId())
+        {
+            case R.id.nav_info:
+                startActivity(new Intent(NavigationDrawer.this,InfoActivity.class));
+                break;
+
+            case R.id.nav_abhipray:
+                startActivity(new Intent(NavigationDrawer.this,AbhiprayActivity.class));
+                break;
+
+            case R.id.about:
+                startActivity(new Intent(NavigationDrawer.this,AboutUsActivity.class));
+                break;
+
+            case R.id.help:
+                startActivity(new Intent(NavigationDrawer.this,HelpActivity.class));
+                break;
+        }
         return false;
     }
+
+
 }

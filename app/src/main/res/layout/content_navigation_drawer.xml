@@ -47,6 +47,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/gharp"
                     android:layout_width="match_parent"
                     android:layout_height="155dp"
                     android:src="@drawable/gpp" />
@@ -69,6 +70,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/panip"
                     android:layout_width="match_parent"
                     android:layout_height="155dp"
                     android:scaleType="fitXY"
@@ -94,9 +96,11 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/registerN"
                 android:layout_width="match_parent"
                 android:layout_height="155dp"
                 android:scaleType="fitXY"
+
                 android:src="@drawable/gmp" />
 
             <TextView
